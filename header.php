@@ -24,7 +24,7 @@
                         Movimentações
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="manutencaoEquipamento.php">Manutenção</a>
                         <a class="dropdown-item" href="#">Outra ação</a>
                         <a class="dropdown-item" href="#">Algo mais aqui</a>
                     </div>
