@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +6,25 @@
 </head>
 
 <body>
-    <?php include('header.php'); ?>
-
-    <div class="container">
-        <h1>Cadastro de Marca</h1>
-        <form>
-            <div class="form-group w-25">
-                <label for="codigoMarca">Código</label>
-                <input type="number" min="1" class="form-control" id="codigoMarca" placeholder="Código da marca">
-            </div>
-            <div class="form-group">
-                <label for="descricaoMarca">Descrição</label>
-                <input type="text" class="form-control" id="descricaoMarca" placeholder="Informe a descrição da marca">
-            </div>
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-success">Enviar</button>
-            </div>
-        </form>
+<?php include('header.php'); ?>
+<form class="container mt-5 p-4 rounded" style="background-color: #f8f9fa; border: 1px solid #28a745;">
+    <h1 class="mb-4" style="color: #28a745;">Cadastro de Fornecedor</h1>
+    <div class="form-group">
+        <label for="nome">Nome do Fornecedor:</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex: Camanho Manutenção LTDA">
     </div>
+    <div class="form-group">
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="Ex: XX.XXX.XXX/XXXX-XX">
+    </div>
+    <div class="form-group">
+        <label for="contato">Contato:</label>
+        <input type="text" class="form-control" id="contato" name="contato" placeholder="Ex: (XX) XXXX-XXXX">
+    </div>
+    <div class="d-flex">
+        <button type="submit" class="btn btn-success btn-hover-custom">Salvar</button>
+    </div>
+</form>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
