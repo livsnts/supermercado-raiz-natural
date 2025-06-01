@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supermercado Raiz Natural - Equipamentos em Manutenção por Assistência</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
-        body { background-color: #f4f6f9; }
-        .custom-container { margin-top: 2vw; background-color: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .table-responsive { margin-top: 20px; }
-        #areaRelatorioManutencao { margin-top: 30px; padding: 20px; border: 1px solid #dee2e6; border-radius: 5px; background-color: #f8f9fa; }
-        .breadcrumb { background-color: #e9ecef; }
+        body {
+            background-color: #f4f6f9;
+        }
+
+        .custom-container {
+            margin-top: 2vw;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-responsive {
+            margin-top: 20px;
+        }
+
+        #areaRelatorioManutencao {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+
+        .breadcrumb {
+            background-color: #e9ecef;
+        }
     </style>
 </head>
+
 <body>
-     <?php include('header.php'); ?>
+    <?php include('header.php'); ?>
     <div class="container-rel custom-container">
         <h1 class="text-center mb-4">Relatório de Equipamentos em Manutenção por Assistência Técnica</h1>
 
@@ -57,27 +82,33 @@
                         </tr>
                     </thead>
                     <tbody id="corpoTabelaRelatorioManutencao">
-                        </tbody>
+                    </tbody>
                 </table>
             </div>
             <div class="text-center mt-3">
-                <button class="btn btn-secondary" onclick="window.print()">
-                    <i class="fas fa-print"></i> Imprimir Relatório
+                <button class="btn btn-secondary" id="btnAbrirPDF">
+                    <i class="fas fa-file-pdf"></i> Imprimir relatório
                 </button>
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <script>
-        document.getElementById('btnGerarRelatorioManutencao').addEventListener('click', function() {
+        document.getElementById('btnGerarRelatorioManutencao').addEventListener('click', function () {
             const selectAssistencia = document.getElementById('selectAssistencia');
             const assistenciaSelecionadaValue = selectAssistencia.value;
-            // const assistenciaSelecionadaText = selectAssistencia.options[selectAssistencia.selectedIndex].text; // Value is already the name
+            // const assistenciaSelecionadaText = selectAssistencia.options[selectAssistencia.selectedIndex].text;
             const areaRelatorio = document.getElementById('areaRelatorioManutencao');
             const tituloRelatorio = document.getElementById('tituloRelatorioManutencao');
             const corpoTabela = document.getElementById('corpoTabelaRelatorioManutencao');
@@ -104,14 +135,14 @@
                     { cod: 'CPU002', desc: 'Notebook Corporativo', dataEnvio: '10/05/2025', problema: 'Superaquecimento e desligamento inesperado.' }
                 ];
             } else if (assistenciaSelecionadaValue === 'Conserta Tudo Já') {
-                 sampleData = [
+                sampleData = [
                     { cod: 'BAL001', desc: 'Balança de Precisão Digital', dataEnvio: '22/05/2025', problema: 'Display não funciona corretamente.' },
                     { cod: 'IMP001', desc: 'Impressora Laser Colorida', dataEnvio: '18/05/2025', problema: 'Atolamento constante de papel.' }
                 ];
             } else {
-                 sampleData = [
-                    // Poderia ter um default ou buscar todos, mas para o filtro é melhor ter dados específicos
-                 ];
+                sampleData = [
+
+                ];
             }
 
             if (sampleData.length === 0) {
@@ -126,7 +157,12 @@
                 });
             }
             areaRelatorio.style.display = 'block';
+
+            document.getElementById('btnAbrirPDF').addEventListener('click', function () {
+                window.open('pdf/relatorio-assistencia.pdf', '_blank');
+            });
         });
     </script>
 </body>
+
 </html>

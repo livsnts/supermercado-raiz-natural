@@ -114,7 +114,7 @@
             
             const observacao = document.getElementById('observacaoChegada').value;
 
-            // Validação básica
+            
             if (!equipamentoValue) {
                 alert("Por favor, selecione o Equipamento.");
                 return;
@@ -127,7 +127,7 @@
                 alert("Por favor, selecione o Departamento.");
                 return;
             }
-            // Data de saída pode ser opcional ao adicionar, mas validamos se estiver preenchida e é posterior à chegada
+            
             if (dataSaida && dataChegada && dataSaida < dataChegada) {
                 alert("A Data de Saída não pode ser anterior à Data de Chegada.");
                 return;
@@ -144,9 +144,9 @@
 
             celulaEquipamento.textContent = equipamentoText;
             celulaDepartamento.textContent = departamentoText;
-            celulaDataChegada.textContent = dataChegada ? new Date(dataChegada + 'T00:00:00').toLocaleDateString('pt-BR') : ''; // Adiciona T00:00:00 para evitar problemas de fuso horário e formata
-            celulaDataSaida.textContent = dataSaida ? new Date(dataSaida + 'T00:00:00').toLocaleDateString('pt-BR') : ''; // Adiciona T00:00:00 para evitar problemas de fuso horário e formata
-            // Para limpar o formulário inteiro:
+            celulaDataChegada.textContent = dataChegada ? new Date(dataChegada + 'T00:00:00').toLocaleDateString('pt-BR') : ''; 
+            celulaDataSaida.textContent = dataSaida ? new Date(dataSaida + 'T00:00:00').toLocaleDateString('pt-BR') : '';
+            
             document.getElementById('localizacaoForm').reset();
         });
     </script>
