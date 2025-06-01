@@ -24,6 +24,7 @@
             </div>
             <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-success">Salvar</button>
+                <a href="index.php" class="btn btn-success ml-4" role="button">Voltar</a>
             </div>
         </form>
     </div>

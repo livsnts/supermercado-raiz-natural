@@ -62,6 +62,7 @@
 
             <div class="d-flex">
                 <button type="submit" class="btn btn-success btn-hover-custom">Salvar Equipamento</button>
+                <a href="index.php" class="btn btn-success ml-4" role="button">Voltar</a>
             </div>
         </form>
     </div>

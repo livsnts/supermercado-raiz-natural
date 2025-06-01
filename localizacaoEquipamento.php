@@ -92,6 +92,7 @@
         </div>
          <div class="d-flex-center mt-3">
             <button type="submit" form="localizacaoForm" class="btn btn-success">Salvar Histórico Completo</button>
+            <a href="index.php" class="btn btn-success ml-4" role="button">Voltar</a>
             </div>
     </div>
 </div>

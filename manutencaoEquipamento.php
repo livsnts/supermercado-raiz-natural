@@ -106,6 +106,7 @@
 
         <div class="text-center">
             <button type="submit" class="btn btn-success" id="salvarFicha">Salvar Ficha</button>
+            <a href="index.php" class="btn btn-success ml-4" role="button">Voltar</a>
         </div>
     </div>
 
