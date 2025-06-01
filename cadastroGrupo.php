@@ -16,7 +16,7 @@
         <div class="form-group">
             <label for="grupo">Grupo:</label>
             <select class="form-control" id="grupo" name="grupo">
-                <option selected>Selecione o grupo do produto:</option>
+                <option selected>--Selecione o grupo do produto:--</option>
                 <option value="1">Impressoras</option>
                 <option value="2">Computadores</option>
                 <option value="3">Balanças Eletrônicas</option>
