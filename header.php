@@ -24,6 +24,12 @@
         background-color: #218838; 
         border-color: #1e7e34;
     }
+
+    .container-rel {
+        max-width: 1200px;
+        margin: 40px auto; 
+        padding: 20px
+    }
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: green;">
@@ -65,9 +71,9 @@
                         Relatórios
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="manutencaoEquipamento.php">Equipamentos por Grupo</a>
-                        <a class="dropdown-item" href="localizacaoEquipamento.php">Equipamentos em Manutenção por Assistência Técnica</a>
-                        <a class="dropdown-item" href="localizacaoEquipamento.php">Equipamentos por Departamento</a>
+                        <a class="dropdown-item" href="relatorioEquipPorGrupo.php">Equipamentos por Grupo</a>
+                        <a class="dropdown-item" href="relatorioEquipManuAssistTec.php">Equipamentos em Manutenção por Assistência Técnica</a>
+                        <a class="dropdown-item" href="relatorioEquipPorDepart.php">Equipamentos por Departamento</a>
                     </div>
                     
                 </li>
