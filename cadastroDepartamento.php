@@ -1,14 +1,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de</title>
+    <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
 <?php include('header.php'); ?>
 <form class="container mt-5 p-4 rounded" style="background-color: #f8f9fa; border: 1px solid #28a745;">
-    <h1 class="mb-4" style="color: #28a745;">Cadastro de Departamento</h1>
+    <h1 class="mb-4">Cadastro de Departamento</h1>
     <div class="form-group">
         <label for="nome">Nome do Departamento:</label>
         <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex: Impressoras">

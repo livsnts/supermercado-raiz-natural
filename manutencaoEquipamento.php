@@ -24,11 +24,11 @@
 <body>
     <?php include('header.php'); ?>
     <div class="container">
-        <h1>Manutenção</h1>
         <form id="manutencaoForm">
+            <h1>Manutenção</h1>
             <div class="form-group">
                 <label for="codigoManutencao">Código</label>
-                <input type="number" min="1" class="form-control" id="codigoManutencao" placeholder="Informe o código da manutenção">
+                <input type="text"  class="form-control" id="codigoManutencao" placeholder="Informe o código da manutenção">
             </div>
 
             <div class="form-group">

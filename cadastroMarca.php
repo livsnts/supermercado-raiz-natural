@@ -12,18 +12,18 @@
     <?php include('header.php'); ?>
 
     <div class="container">
-        <h1>Cadastro de Marca</h1>
-        <form>
-            <div class="form-group w-25">
+        <form class= "container mt-5 p-4 rounded" style="background-color: #f8f9fa; border: 1px solid #28a745;" method="post">
+            <h1>Cadastro de Marca</h1>
+            <div class="form-group w-50">
                 <label for="codigoMarca">Código</label>
-                <input type="number" min="1" class="form-control" id="codigoMarca" placeholder="Código da marca">
+               <input type="text" class="form-control" id="codigoMarca" placeholder="Código da marca">
             </div>
             <div class="form-group">
                 <label for="descricaoMarca">Descrição</label>
                 <input type="text" class="form-control" id="descricaoMarca" placeholder="Informe a descrição da marca">
             </div>
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="submit" class="btn btn-success">Salvar</button>
             </div>
         </form>
     </div>

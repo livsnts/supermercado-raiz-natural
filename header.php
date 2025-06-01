@@ -56,9 +56,20 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="manutencaoEquipamento.php">Manutenção</a>
-                        <a class="dropdown-item" href="#">Outra ação</a>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        <a class="dropdown-item" href="localizacaoEquipamento.php">Localização</a>
                     </div>
+
+                    <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Relatórios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="manutencaoEquipamento.php">Equipamentos por Grupo</a>
+                        <a class="dropdown-item" href="localizacaoEquipamento.php">Equipamentos em Manutenção por Assistência Técnica</a>
+                        <a class="dropdown-item" href="localizacaoEquipamento.php">Equipamentos por Departamento</a>
+                    </div>
+                    
                 </li>
             </ul>
         </div>

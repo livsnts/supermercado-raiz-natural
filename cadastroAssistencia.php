@@ -29,11 +29,11 @@
     <?php include('header.php'); ?>
 
     <div class="container">
-        <h1>Cadastro de Assistência Técnica</h1>
-        <form>
+        <form class= "container mt-5 p-4 rounded" style="background-color: #f8f9fa; border: 1px solid #28a745;" method="post">
+            <h1>Cadastro de Assistência Técnica</h1>
             <div class="form-group">
                 <label for="codigoAssistencia">Código</label>
-                <input type="number" min="1" class="form-control" id="codigoAssistencia" placeholder="Informe o código da assistência">
+                 <input type="text" class="form-control" id="codigoAssistencia" placeholder="Informe o código da assistência">
             </div>
             <div class="form-group">
                 <label for="nomeAssitencia">Nome</label>
@@ -84,7 +84,7 @@
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="submit" class="btn btn-success">Salvar</button>
             </div>
         </form>
     </div>

@@ -8,7 +8,7 @@
 <body>
 <?php include('header.php'); ?>
 <form class="container mt-5 p-4 rounded" style="background-color: #f8f9fa; border: 1px solid #28a745;">
-    <h1 class="mb-4" style="color: #28a745;">Cadastro de Fornecedor</h1>
+    <h1 class="mb-4">Cadastro de Fornecedor</h1>
     <div class="form-group">
         <label for="nome">Nome do Fornecedor:</label>
         <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex: Camanho Manutenção LTDA">
